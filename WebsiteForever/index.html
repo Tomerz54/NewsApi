@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript workspace</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer>
+        var apiKey  = 'https://newsapi.org/v2/top-headlines?' +
+    'sources=bbc-news&' +
+    'apiKey=3cc195e9f19049b49dd967bb3abd1188';
+
+    </script>
+</head>
+<body>
+    <h1>News Feed API</h1>
+    <article >
+        <p id="titleText">title :</p>
+        <p id="authorText">authorText :</p>
+        <p id="contentText">content :</p>
+        <p id="descriptionText">description</p>
+        <p id="publishedAtText">published at</p>
+        
+        <a id="urlText">link to this article:</a>
+        <h1>image of the news:</h1>
+        <img id="imageText"></img>
+        <h1></h1>
+
+        <button onclick="fetchNews(apiKey)">generate latest news</button>
+    </article>
+</body>
+</html>
