@@ -1,5 +1,5 @@
 var apiKey  = 'https://newsapi.org/v2/top-headlines?' +
-'sources=bbc-news&' +
+'country=us&' +
 'apiKey=3cc195e9f19049b49dd967bb3abd1188';
 
 var req = new Request(apiKey);
